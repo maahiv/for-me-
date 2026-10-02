@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Boyfriend Day ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+
+     <!-- 07: THINKING OF YOU -->
+    <section class="screen thinking">
+      <p class="script-title">Someone is thinking<br/>about you…</p>
+
+      <div class="window">
+  <img src="think.png" alt="Someone thinking about you" class="thinking-image">
+</div>
+      <p class="thinking-copy">And it's someone who<br/>adores you ♡</p>
+      <button class="pill-btn" onclick="go(1)">Open your surprise →</button>
+    </section>
+
+
+    <!-- 01: HAPPY BOYFRIEND DAY -->
+    <section class="screen welcome">
+      <div class="decor heart h1">♡</div>
+      <div class="decor star s1">☆</div>
+      <div class="decor star s2">☆</div>
+      <div class="decor heart h2">♡</div>
+
+      <div class="title-stack">
+        <div class="paper pink">Happy</div>
+        <div class="paper rose">Boyfriend Day</div>
+        <div class="paper blue">Handsome</div>
+      </div>
+
+      <div class="cute-bear" aria-label="cute bear">🐻</div>
+
+      <p class="small-copy">Today is all about you and<br/>how special you are to me ❤️</p>
+
+      <button class="pill-btn" onclick="go(2)">Continue →</button>
+    </section>
+
+    <!-- 03: REASONS -->
+    <section class="screen reasons">
+      <p class="script-title">A few reasons<br/>why you're so special</p>
+
+      <div class="reason-board">
+        <div class="note n1">You always listen<br/>to me</div>
+        <div class="note n2">You make me<br/>smile every day</div>
+        <div class="note n3">You care so<br/>deeply</div>
+        <div class="note n4">You are my<br/>safe place</div>
+        <div class="note n5">You make<br/>everything feel<br/>easier</div>
+        <div class="note n6">You love me<br/>sooo much,<br/>which I love it</div>
+      </div>
+
+      <button class="pill-btn" onclick="go(3)">There's more →</button>
+    </section>
+
+    <!-- 04: FAVORITE MEMORIES -->
+    <section class="screen memories">
+      <p class="script-title">My Favorite Memories</p>
+      <p class="tiny-sub">Tap the heart to reveal</p>
+
+      <div class="photo-upload-area">
+        <label class="upload-btn">＋ Add your photos
+          <input id="photoInput" type="file" accept="image/*" multiple>
+        </label>
+        <p class="upload-help">Select your photos in the order you want them to appear. You can change them anytime.</p>
+      </div>
+
+      <div class="memory-gallery" id="memoryGallery">
+  <div class="memory-card">
+    <img src="public/p1.jpg" alt="Memory 1">
+  </div>
+
+  <div class="memory-card">
+    <img src="public/p2.jpg" alt="Memory 2">
+  </div>
+
+  <div class="memory-card">
+    <img src="public/p3.jpg" alt="Memory 3">
+  </div>
+
+  <div class="memory-card">
+    <img src="public/p4.jpg" alt="Memory 4">
+  </div>
+
+  <div class="memory-card">
+    <img src="public/p10.jpg" alt="Memory 5">
+  </div>
+
+  <div class="memory-card">
+    <img src="public/p7.jpg" alt="Memory 6">
+  </div>
+</div>
+
+      <button class="big-heart" onclick="revealMemory()" aria-label="Reveal memory">♡</button>
+      <div class="memory-message" id="memoryMessage">A little piece of us. 🫶</div>
+
+      <button class="pill-btn" onclick="go(4)">Read my letter →</button>
+    </section>
+
+    <!-- 05: LETTER -->
+    <section class="screen letter">
+      <p class="script-title">A little message<br/>for you</p>
+
+      <div class="letter-paper">
+        <h3>Hey Handsome,</h3>
+        <div class="letter-paper">
+  <h3>Hey Babu… ❤️</h3>
+
+  <p>
+    Tumhe meri smile pasand hai, aur mujhe tum… ❤️<br>
+    Isliye tumhe dekhte hi mere face pe automatically smile aa jaati hai,
+    jo rukti hi nahi.
+  </p>
+
+  <p>
+    Tumne meri life ko ekdum majedaar aur chatpati si bana diya hai. 🫶
+    Thank you for all the laughs, fights, talks, and all those random
+    little moments we share. ❤️
+    You genuinely make my days a little better and my life a lot more fun.
+  </p>
+
+  <p>
+    I don’t even know when I got this crazy about you,
+    but your love has made me fall for you so much that I can’t even explain it. ❤️
+  </p>
+
+  <p>
+    You’ve made my life a little more crazy, a little more annoying ,
+    but honestly, I love every bit of it when it’s with you.
+    Just please irritate me a little less, Babu.
+  </p>
+
+  <p>
+    I miss you a little too much right now. 👀❤️
+    So hurry up and meet me, Babu…
+    then you’ll know just how much I’ve been missing you. 
+  </p>
+
+  <p>
+    I’m really happy that I have you,
+    and I hope you always keep smiling because you look the cutest when you do. ❤️
+  </p>
+
+  <p>
+    <strong>Babu, I love you. ❤️</strong>
+  </p>
+
+  <p>
+    <strong>Happy Boyfriend Day, my favourite person. 🫶</strong>
+  </p>
+
+  <p class="signature">Yours… ❤️</p>
+</div>
+        
+
+      <button class="pill-btn" onclick="go(5)">Keep going →</button>
+    </section>
+
+    <!-- 06: THANK YOU -->
+    <section class="screen thankyou">
+      <p class="script-title">Thank you for<br/>being mine ♡</p>
+
+      <div class="couple-art">
+        <div class="art-heart">♡</div>
+        <div class="person p-left">👩🏻</div>
+        <div class="person p-right">👨🏻</div>
+        <div class="floating">♡</div>
+      </div>
+
+      <div class="chips">
+        <div>♡ &nbsp; My favorite person</div>
+        <div>♡ &nbsp; My safe place</div>
+        <div>♡ &nbsp; My home</div>
+      </div>
+
+      <button class="pill-btn" onclick="go(6)">Next →</button>
+    </section>
+
+   
+    <!-- 08: FINAL -->
+    <section class="screen final">
+      <div class="final-glow"></div>
+      <div class="final-heart">♥</div>
+      <h1>Happy<br/><span>Boyfriend Day</span></h1>
+      <p>I'm really happy that I have you, Babu. ❤️</p>
+      <p class="final-small">Here's to many more memories together.</p>
+      <button class="pill-btn dark" onclick="restart()">Replay ↻</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
